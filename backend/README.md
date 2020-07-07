@@ -2,28 +2,26 @@
 
 Hey! Thanks to applying for this position, we hope you can learn something new.
 
-What would we like to see in this challenge?
-
-How you work! It’s the main proposal we apply challenges for all applicants
+The main purpose of this challenge is to see how you work and how you solve problems.
 
 So, let’s start.
 
 
 ## Introduction
 
-This challenge is based on you creating a REST API to complete some requirements.
+The challenge here is to create a REST API that fulfils some requirements.
 
-We made a partnership with this [website](https://www.potterapi.com) (of course the partnership is only to be more friendly in text) it provides for us a lot of information about harry potter.
+We made a partnership with this [website](https://www.potterapi.com) (of course the partnership is only to be more friendly in text) it provides us a lot of information about the Harry Potter series.
 
 We propose you create a CRUD application for harry potter characters, in our opinion an amazing film.
 
 Your application must be able to:
-* Create new character
+* Create a new character
 * Read a single character or all characters
 * Update a single character
 * Delete a single character
 
-But, to complete the full challenge, when you create a new character, we would like to save the correct house of character and for that, you can integrate your application with potter api.
+But, to save the correct house which the character belongs to, that can be achieve by integrating with the potter api mentioned earlier
 
 
 ## So, what do we expect?
@@ -50,7 +48,7 @@ NOTES:
 
 ## Persistence
 
-It’s not required to complete the challenge, but be in your mind, we want to know how your work, so it is your time to show all your hard skills, be free to implement a database persistence if you feel it is important to.
+This is not required to complete the challenge, but keep in mind, we want to know how do you your work, so this is a greate opportunity to shoy all of your skills, be free to implement a database persistence if you feel it is important to.
 
 
 ## Filters
@@ -61,7 +59,7 @@ So, implement a filter by house, like the example above
 
 `http://localhost:3000/api/characters?house=5a05e2b252f721a3cf2ea33f`
 
-The result need to be all characters has the house id equal 5a05e2b252f721a3cf2ea33f
+The result need to be all characters belongs to the house with id: `5a05e2b252f721a3cf2ea33f`
 
 
 ## Unit tests
@@ -73,7 +71,7 @@ Create all the tests you find necessary
 
 ## Language
 
-Feel free to use the language you are comfortable
+Feel free to use the language you most are comfortable with.
 
 
 ## Tips
