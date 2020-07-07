@@ -48,7 +48,7 @@ NOTES:
 
 ## Persistence
 
-This is not required to complete the challenge, but keep in mind, we want to know how do you your work, so this is a greate opportunity to shoy all of your skills, be free to implement a database persistence if you feel it is important to.
+This is not required to complete the challenge, but keep in mind, we want to know how do you your work, so this is a greate opportunity to show all of your skills, be free to implement a database persistence if you feel it is important to.
 
 
 ## Filters
