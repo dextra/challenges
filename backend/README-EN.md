@@ -87,8 +87,12 @@ It does not define your level but is a great time to impress us, so think about
   * Document your API REST
 * Application running
 * Code quality
+* Circuit-breacker
+* Cache
+* Retry when some HTTP request fail
 
 Be creative
 
+You need to create a public repository on github or others.
 
 Good luck
