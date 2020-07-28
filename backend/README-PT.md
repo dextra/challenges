@@ -86,8 +86,12 @@ Isso não define seu nível, mas é uma ótima hora para impressionar os avaliad
   * Da API
 * Ter a aplicação rodando.
 * Qualidade de código.
+* Circuit breaker
+* Cache
+* Tentar novamente caso alguma chamada HTTP falhe.
 
 Seja criativo!
 
+Você precisa criar um repositório público no github ou outros.
 
 Boa Sorte.
