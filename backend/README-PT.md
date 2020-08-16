@@ -10,7 +10,7 @@ Então, vamos começar.
 
 Este desafio consiste em criar uma API REST para cumprir alguns requisitos.
 
-Nós fizemos uma parcereia com este [site](https://www.potterapi.com) (claro que a parceria é apenas para ter um texto mais amigável) que disponibiliza uma série de informações sobre a série Harry Potter.
+Nós fizemos uma parceria com este [site](https://www.potterapi.com) (claro que a parceria é apenas para ter um texto mais amigável) que disponibiliza uma série de informações sobre a série Harry Potter.
 
 Queremos que você crie uma aplicação CRUD para os personagens de Harry Potter, que na nossa opinião é um ótimo filme.
 
