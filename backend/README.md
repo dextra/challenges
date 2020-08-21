@@ -1,4 +1,5 @@
 # Dextra backend challenges
 
-* [PT](README-PT.md)
-* [EN](README-EN.md)
+* [Make Magic - PT](MAKE-MAGIC-PT.md)
+* [Make Magic - EN](MAKE-MAGIC-EN.md)
+* [Marvel](MARVEL-BACKEND.md)
