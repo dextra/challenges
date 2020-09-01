@@ -72,7 +72,7 @@ E outros que achar necessário
 
 ## Linguagem
 
-Sinta se à vontade para usar a linguagem que você se sente mais confortável.
+Sinta-se à vontade para usar a linguagem que você se sente mais confortável.
 
 
 ## Dicas
