@@ -1,0 +1,6 @@
+framework module Pods_Fast_NewsTests {
+  umbrella header "Pods-Fast NewsTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
