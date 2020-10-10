@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fastnews.mechanism.FontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_timeline_title"
+    style="@style/Font12sp.BlackText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="end"
+    android:layout_marginTop="16dp"
+    android:gravity="left"
+    android:maxLength="300"
+    app:textFont="@string/font_roboto_regular"
+    tools:showIn="@layout/item_timeline"
+    tools:text="Signal sees 400% increase in installations since the US election. Signal sees 400% increase in installations since the US election." />

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:showIn="@layout/item_timeline">
+
+    <com.fastnews.mechanism.FontTextView
+        android:id="@+id/item_timeline_author"
+        style="@style/Font12sp.GrayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        app:textFont="@string/font_roboto_regular"
+        tools:showIn="@layout/include_item_timeline_timeleft"
+        tools:text="r/food" />
+
+    <com.fastnews.mechanism.FontTextView
+        android:id="@+id/item_timeline_timeleft"
+        style="@style/Font12sp.GrayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="left"
+        app:textFont="@string/font_roboto_regular"
+        tools:text="- 9h" />
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#FF9800</color>
+
+    <color name="white">#ffffff</color>
+    <color name="yellow">#FF9900</color>
+    <color name="green">#8bc53d</color>
+    <color name="dark_green">#7CB036</color>
+    <color name="dark_gray">#4d4d4d</color>
+    <color name="blue">#d83d68f5</color>
+    <color name="dark_blue">#22387D</color>
+    <color name="red">#d6ff3b3b</color>
+    <color name="black">#000000</color>
+    <color name="gray">#818181</color>
+    <color name="light_gray">#e7e7e7</color>
+    <color name="purple">#551A8B</color>
+    <color name="gull_gray">#90A4AE</color>
+    <color name="orange">#FFA824</color>
+    <color name="light_orange">#FFC469</color>
+    <color name="bright_orange">#FFA812</color>
+
+    <!-- material colors -->
+    <color name="m_purple">#4A148C</color>
+    <color name="m_red">#B71C1C</color>
+    <color name="m_deep_purple">#311B92</color>
+    <color name="m_indigo">#1A237E</color>
+    <color name="m_blue">#0D47A1</color>
+    <color name="m_light_blue">#01579B</color>
+    <color name="m_cyan">#006064</color>
+    <color name="m_lime">#827717</color>
+    <color name="m_amber">#FF6F00</color>
+    <color name="m_deep_orange">#DD2C00</color>
+    <color name="m_brown">#3E2723</color>
+
+    <color name="transparent">@android:color/transparent</color>
+
+</resources>

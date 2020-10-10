@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/app_navigation"
+            app:startDestination="@id/timeline_fragment">
+
+    <fragment
+            android:id="@+id/timeline_fragment"
+            android:name="com.fastnews.ui.timeline.TimelineFragment"
+            android:label="timeline_fragment"
+            tools:layout="@layout/fragment_timeline">
+        <action
+                android:id="@+id/action_timeline_to_detail"
+                app:destination="@id/detail_fragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/detail_fragment"
+            android:name="com.fastnews.ui.detail.DetailFragment"
+            android:label="fragment_detail"
+            tools:layout="@layout/fragment_detail_post"/>
+
+</navigation>

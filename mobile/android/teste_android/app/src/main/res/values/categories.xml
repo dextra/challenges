@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="ALL_CATEGORIES">All</string>
+    <string name="BUSINESS">Business</string>
+    <string name="ENTERTAINMENT">Entertainment</string>
+    <string name="GENERAL">General</string>
+    <string name="HEALTH">Health</string>
+    <string name="SCIENCE">Science</string>
+    <string name="SPORTS">Sports</string>
+    <string name="TECHNOLOGY">Technology</string>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="txt_progress_timeline">Oi, estou buscando as notícias, só um momento...</string>
+    <string name="txt_without_conn_timeline">Sem internet!\nPor favor, verifique sua conexão e toque aqui!</string>
+
+    <string name="item_timeline_share_title">Compartilhar</string>
+
+</resources>

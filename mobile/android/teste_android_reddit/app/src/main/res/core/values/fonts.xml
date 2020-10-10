@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Roboto -->
+    <string name="font_roboto_bold">fonts/Roboto/Roboto-Bold.ttf</string>
+    <string name="font_roboto_regular">fonts/Roboto/Roboto-Regular.ttf</string>
+    <string name="font_roboto_italic">fonts/Roboto/Roboto-Italic.ttf</string>
+    <string name="font_roboto_light">fonts/Roboto/Roboto-Light.ttf</string>
+
+</resources>
