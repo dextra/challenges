@@ -115,9 +115,9 @@ Os filtros nos ajudam a resgatar somente os registro que queremos...
 
 Então, implemente um filtro por casa, como o exemplo a seguir:
 
-`http://localhost:3000/api/characters?house=5a05e2b252f721a3cf2ea33f`
+`http://localhost:3000/api/characters?house=1760529f-6d51-4cb1-bcb1-25087fce5bde`
 
-O resultado precisa ser todos os personagens que pertencêm a casas com id `5a05e2b252f721a3cf2ea33f`
+O resultado precisa ser todos os personagens que pertencêm a casa com id `1760529f-6d51-4cb1-bcb1-25087fce5bde`
 
 
 ## Teste
