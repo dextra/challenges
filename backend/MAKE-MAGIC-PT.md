@@ -10,7 +10,66 @@ Então, vamos começar.
 
 Este desafio consiste em criar uma API REST para cumprir alguns requisitos.
 
-Nós fizemos uma parceria com este [site](https://www.potterapi.com) (claro que a parceria é apenas para ter um texto mais amigável) que disponibiliza uma série de informações sobre a série Harry Potter.
+Para que seja possível completar o desafio, utilize a documentação abaixo:
+
+### 1 - Criação de usuário:
+
+```
+Método: POST
+Host: http://us-central1-rh-challenges.cloudfunctions.net/potterApi/users
+Body: {
+	"email": "SEU_EMAIL_AQUI",
+	"password": "DEFINA_UMA_SENHA_AQUI",
+	"name": "SEU_NOME_AQUI"
+}
+```
+
+O retorno da chamada será o seu usuário criado, seguindo o seguinte modelo:
+
+```
+{
+  "user": {
+    "email": "email",
+    "password": "sua senha criptografada",
+    "id": "id",
+    "apiKey": "sua apikey",
+    "name": "nome"
+  }
+}
+```
+
+Grave a sua `apiKey` em um lugar seguro, ela será sua chave para conseguir completar o desafio.
+
+### 2 - Recuperação das casas:
+
+```
+Método: GET
+Host: http://us-central1-rh-challenges.cloudfunctions.net/potterApi/houses
+Header: {
+	"apikey": "SUA_APIKEY_AQUI",
+}
+```
+
+O retorno da chamada será a lista de casas, seguindo o seguinte modelo:
+
+```
+{
+  "houses": [
+    {
+      "id": "id da casa",
+      "name": "Nome da casa",
+      "headOfHouse": "Diretor da casa",
+      "values": "lista de valores da casa",
+      "colors": "lista de cores da casa"
+      "school": "Nome da escola",
+      "mascot": "mascote da casa",
+      "houseGhost": "Fantasma da casa",
+      "founder": "Fundador da casa"
+    }
+  ]
+}
+```
+
 
 Queremos que você crie uma aplicação CRUD para os personagens de Harry Potter, que na nossa opinião é um ótimo filme.
 
@@ -32,7 +91,7 @@ Vamos começar com um simples `json` contendo as propriedados de um personagem:
     "name": "Harry Potter",
     "role": "student",
     "school": "Hogwarts School of Witchcraft and Wizardry",
-    "house": "5a05e2b252f721a3cf2ea33f",
+    "house": "1760529f-6d51-4cb1-bcb1-25087fce5bde",
     "patronus": "stag"
 }
 ```
@@ -41,7 +100,7 @@ Nós queremos criar um novo registro com todas essas informações e sua aplica�
 NOTAS:
 * Você pode especificar todas as propriedades requeridas.
 * Você pode especificar todos os tipos dos valores.
-* A propriedade `house`, ou outra propriedade com o mesmo significado, quando especificada, precisa ser uma `string` com o `id` da casa vindo do potterapi. Você pode ver toda a documentação neste [link](https://www.potterapi.com/)
+* A propriedade `house`, ou outra propriedade com o mesmo significado, quando especificada, precisa ser uma `string` com o `id` da casa vindo do potterapi.
 * Quando o `id` da casa for inválido, você precisa retornar uma mensagem de erro.
 
 
