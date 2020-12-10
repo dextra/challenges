@@ -83,8 +83,15 @@ Resposta:
 
 ```
 {
-	userId: "<id do usuário>
-	userName: "<nome do usuário>"
+  "user": {
+    "name": "Nome do Usuário",
+    "id": "7c868290-df77-4458-a593-08813b324848",
+    "email": "usuario2@teste.com",
+    "cpf": "75540308840",
+    "phoneNumber": "1199998888",
+    "emailUpdatesAllowed": false,
+    "password": "$2b$12$y41xxlSNli3zHk/KcYdtMOApPUEaWvmeOMl8Acbg9/kHqp5j0yxbm"
+  }
 }
 ```
 
