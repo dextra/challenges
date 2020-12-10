@@ -18,11 +18,11 @@ Definição das telas:
 
 ### Login
 
-[](./images/Login.png)
+![](./images/Login.png)
 
 ### Tela de registro
 
-[](./images/telaDeRegistro.png)
+![](./images/telaDeRegistro.png)
 
 Tela de registro de acordo com cada plataforma
 
