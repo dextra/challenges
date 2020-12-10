@@ -124,3 +124,17 @@ Resposta:
   }
 }
 ```
+
+## Critérios de avaliação
+
+Determine uma arquitetura organizada e bem definida como se tivesse fazendo um projeto real.
+Não esqueça de fazer os testes unitários.
+Testes de tela serão considerados um ponto extra.
+Crashes ao inicializar ou não funcionamento em fluxos básicos serão considerados eliminatórios, portanto teste antes de enviar.
+Capriche e faça como se estivesse de fato trabalhando em um projeto para Dextra. A idéia desse teste é conseguir conhecer um pouquinho da sua forma de trabalhar.
+
+Envio do projeto pronto
+
+Envie o link do projeto git do seu teste. 
+Faça o upload do .apk no Google Drive e compartilhe conosco. (Lembre-se de deixar o link compartilhado para todos)
+
