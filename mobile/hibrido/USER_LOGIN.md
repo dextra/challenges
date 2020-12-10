@@ -69,15 +69,15 @@ Endpoint: `https://us-central1-rh-challenges.cloudfunctions.net/api/users`
 Body:
 ```
 {
-	"name" : "Nome do Usuário",
-	"email" : "usuario@teste.com",
-	"phoneNumber" : "1199998888",
-	"password" : "R123ayay",
-	"emailUpdatesAllowed" : false,
-  "cpf": "75540308840"
+	"name": "Nome do Usuário",
+	"email": "usuario@teste.com",
+	"phoneNumber": "1199998888",
+	"password": "R123ayay",
+	"emailUpdatesAllowed": false,
+	"cpf": "75540308840"
 }
-
 ```
+
 Resposta:
 **200**
 
