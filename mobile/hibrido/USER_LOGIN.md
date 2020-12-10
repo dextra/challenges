@@ -26,6 +26,10 @@ Definição das telas:
 
 Tela de registro de acordo com cada plataforma
 
+### Home
+
+![](./images/home.png)
+
 ## Regras:
 1 - Login/Cadastro:
 * Todos os campos são obrigatórios, exceto a autorização para envio de atualizações via e-mail.
@@ -59,7 +63,9 @@ Tela de registro de acordo com cada plataforma
 
 ### Cadastro
 Método: POST
-Endpoint: <definir>
+
+Endpoint: `https://us-central1-rh-challenges.cloudfunctions.net/api/users`
+
 Body:
 ```
 {
@@ -67,7 +73,8 @@ Body:
 	"email" : "usuario@teste.com",
 	"phoneNumber" : "1199998888",
 	"password" : "R123ayay",
-	"emailUpdatesAllowed" : false
+	"emailUpdatesAllowed" : false,
+  "cpf": "75540308840"
 }
 
 ```
@@ -84,11 +91,29 @@ Resposta:
 ### Login
 
 Método: POST
-Endpoint: <definir>
+
+Endpoint: `https://us-central1-rh-challenges.cloudfunctions.net/api/users/token`
+
 Body:
 ```
 {
 	"email" : "usuario@teste.com",
 	"password" : "R123ayay",
+}
+```
+
+Resposta:
+**200**
+
+```
+{
+  "token": "token do usuário",
+  "user": {
+    "id": "uuid",
+    "name": "Nome do Usuário",
+    "email": "usuario@teste.com",
+    "password": "",
+    "cpf": "75540308840"
+  }
 }
 ```
