@@ -1,4 +1,4 @@
-# Pandemic notification - Backend
+# COVID notification - Backend
 
 Olá! Obrigado por ter aceitado o desasfio! E esperamos que você aprenda algo novo.
 
