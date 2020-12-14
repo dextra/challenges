@@ -1,6 +1,6 @@
 # COVID notification - Backend
 
-Olá! Obrigado por ter aceitado o desasfio! E esperamos que você aprenda algo novo.
+Olá! Obrigado por ter aceitado o desafio! E esperamos que você aprenda algo novo.
 
 O principal objetivo desde desafio é ver como você trabalha e como soluciona problemas.
 
@@ -8,17 +8,18 @@ Então, vamos começar.
 
 ## Introdução
 
-Dado o cenário do ano de 2020, bem atípico na vida das pessoas com a pandamia do COVID-19, gostaríamos de ajudar todos a se manterem informadas do aumento do número de casos da doença.
+Dado o cenário do ano de 2020, bem atípico na vida das pessoas com a pandamia do COVID-19, gostaríamos de ajudar todos a se manterem informados do aumento do número de casos da doença em determinado país.
 
-Sendo assim, gostaríamos que você construísse um sistema de notificação para os casos de COVID-19 em determinado país.
+Já existem outras APIs que podem nos ajudar, fornecendo dados sobre o número de casos no país. Um exemplo é a [disease.sh](https://disease.sh/docs/#/COVID-19%3A%20Worldometers), que já entrega os dados filtrados por país, através do seguinte endpoint: `/v3/covid-19/countries/{country}`.
 
-Utilizando a [documentação](https://disease.sh/docs/#/COVID-19%3A%20Worldometers), é possível notar que com o endpoint `/v3/covid-19/countries/{country}` conseguimos filtrar apenas um país em específico.
-Sendo assim, vamos aos detalhes do desafio.
+Sendo assim, gostaríamos que você construísse um sistema de notificação para o aumento de casos de COVID-19 em determinado país.
+
+Vamos aos detalhes do desafio.
 
 
 ## Detalhes
 
-Construa uma CRUD de notificação, implementando as seguintes operações:
+Gostaríamos que você implementasse as operações CRUD de uma simples tabela, que armazenará as configurações da notificação. Construa as seguintes operações:
 
 * Criação
 * Edição
@@ -29,7 +30,7 @@ Construa uma CRUD de notificação, implementando as seguintes operações:
 Para a criação de uma notificação, gostaríamos de enviar as seguintes informações:
 
 * País: no formato `ISO3`, exemplo: 'BRA' (Brasil)
-* Quantidade de diferença: Um número que represente quando eu quero ser notificado. Por exemplo, caso a diferença de casos de COVID-19 seja maior que 5.
+* Diferença de casos mínima para notificação: Um número que represente quando eu quero ser notificado. Por exemplo, caso a diferença de casos de COVID-19 seja maior que 5.
 * Tipo de notificação: `['EMAIL', 'TELEGRAM']`
 * Destinatário da notificação: Quando o tipo for `EMAIL`, este campo deve conter um email e quanto for `TELEGRAM` este campo deve conter o `chat_id` do telegram a ser notificado.
 * Tempo de intervalo a cada interação: `60000` tempo em milisegundos. Exemplo, gostaria de ser notificado a cada 1 segundo = `60000` milisegundos, ou a cada 3 segundos = `180000` milisegundos...
@@ -63,8 +64,17 @@ Crie todos os testes necessários
 * Teste unitário
 * Teste de integração
 
-E outros que achar necessário
+E outros que achar necessário.
 
+## O que avaliaremos
+
+Como um bom engenheiro de software, você deve mostrar capaz de entregar um código:
+
+* Funcional e sem bugs: avaliaremos se o seu código funciona de acordo com as especificações acima
+* Legível: seu código deve ser fácil de enteder, respeitando regras como identação, nomenclatura correta e variáveis e classes, etc.
+* Escalável: nos preocuparemos com a performance do seu código. Fique atento a problemas como loops dentro de loops (O(N^2)) e concorrência.
+* Testado: testes estão no nosso dia-a-dia. Analisaremos sua capacidade de criar testes bem escritos e que ajudem a capturar bugs.
+* De alta qualidade: boas práticas de programação são muito importante, como os princípios SOLID e outros design patterns que façam sentido.
 
 ## Diferenciais
 
@@ -78,8 +88,8 @@ E outros que achar necessário
 * Retry caso uma chamada HTTP falhe.
 
 
-Seja criativo!
+Seja criativo! Features extras que não pensamos ou formas diferentes de se resolver problemas serão vistas com bons olhos!
 
-Você precisa criar um repositório público no github ou outros.
+Você precisa criar um repositório público no GitHub ou outros.
 
 Boa Sorte.
