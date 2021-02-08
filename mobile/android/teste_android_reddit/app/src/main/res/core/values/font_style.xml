@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base Texts -->
+    <style name="Text" parent="@android:style/TextAppearance">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <!-- Color styles -->
+    <style name="BlackText" parent="@style/Text">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="WhiteText" parent="@style/Text">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="GrayText" parent="@style/Text">
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="LightGrayText" parent="@style/Text">
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+
+    <style name="BlueText" parent="@style/Text">
+        <item name="android:textColor">@color/blue</item>
+    </style>
+
+    <style name="RedText" parent="@style/Text">
+        <item name="android:textColor">@color/red</item>
+    </style>
+
+    <!-- Fonts -->
+    <style name="Font8sp.GrayText" parent="@style/GrayText">
+        <item name="android:textSize">8sp</item>
+    </style>
+
+    <style name="Font10sp.GrayText" parent="@style/GrayText">
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="Font12sp.BlackText" parent="@style/BlackText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Font12sp.GrayText" parent="@style/GrayText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Font12sp.LightGrayText" parent="@style/LightGrayText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Font12sp.BlueText" parent="@style/BlueText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Font12sp.RedText" parent="@style/RedText">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Font14sp.GrayText" parent="@style/GrayText">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Font14sp.BlackText" parent="@style/BlackText">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Font16sp.GrayText" parent="@style/GrayText">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+</resources>

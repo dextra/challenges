@@ -1,0 +1,143 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+android {
+
+    // Keys for buildConfigFields
+    def API_ENDPOINT = "API_ENDPOINT"
+    def API_ENDPOINT_REDDIT = '"https://www.reddit.com/r/Android/"'
+
+    def versionMajor = 1
+    def versionMinor = 0
+    def versionPatch = 0
+
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "com.fastnews"
+
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+
+        versionCode 100000
+        versionName "${versionMajor}.${versionMinor}.${versionPatch}"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("key/fast-news-key.jks")
+            storePassword "RPOXCi1I2hDOo4LbmQhSPgQN82216G6c"
+            keyAlias "fast-news"
+            keyPassword "RPOXCi1I2hDOo4LbmQhSPgQN82216G6c"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles(
+                    'proguard/proguard-android-support.pro',
+                    'proguard/proguard-retrofit.pro',
+                    'proguard/proguard-project.pro',
+                    'proguard/proguard-okio.pro')
+            buildConfigField "String", API_ENDPOINT, API_ENDPOINT_REDDIT
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            minifyEnabled false
+            buildConfigField "String", API_ENDPOINT, API_ENDPOINT_REDDIT
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude 'META-INF/atomicfu.kotlin_module'
+    }
+
+    sourceSets {
+        main.java.srcDirs += 'src/main/java'
+
+        main {
+            file('src/main/res')
+                    .listFiles()
+                    .each { res.srcDirs += it.path }
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
+
+    // Test
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    // Kotlin coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$rootProject.coroutinesVersion"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$rootProject.coroutinesVersion"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2'
+
+    //Okhttp3
+    implementation "com.squareup.okhttp3:okhttp:3.14.2"
+
+    // Lifecycle
+    implementation "androidx.lifecycle:lifecycle-viewmodel:$rootProject.archLifecycleVersion"
+    implementation "androidx.lifecycle:lifecycle-extensions:$rootProject.archLifecycleVersion"
+
+    // ViewModel Kotlin support
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$rootProject.archLifecycleVersion"
+
+    // Extensions
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.1.0'
+
+    // Glide
+    implementation("com.github.bumptech.glide:glide:4.9.0") {
+        exclude group: "com.android.support"
+    }
+
+    // CardView
+    implementation 'androidx.cardview:cardview:1.0.0'
+
+    // Bottom sheet
+    implementation 'com.flipboard:bottomsheet-core:1.5.0'
+
+    // Navigation
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    // Custom tabs
+    implementation 'com.android.support:customtabs:28.0.0'
+
+}

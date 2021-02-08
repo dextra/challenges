@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/empty_state"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/big_margin"
+    android:visibility="gone"
+    android:gravity="center_vertical"
+    android:background="@color/colorBackground"
+    tools:visibility="visible">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:layout_width="@dimen/icon_image_size"
+            android:layout_height="@dimen/icon_image_size"
+            android:layout_marginEnd="@dimen/small_margin"
+            android:src="@drawable/ic_worldwide_news_bw"/>
+
+        <TextView
+            android:id="@+id/empty_state_title"
+            style="@style/Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="@string/empty_state_title_source" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/empty_state_subtitle"
+        style="@style/SubTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/small_margin"
+        tools:text="@string/empty_state_subtitle_source" />
+
+</LinearLayout>

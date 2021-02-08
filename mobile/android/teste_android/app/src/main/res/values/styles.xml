@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowActivityTransitions">true</item>
+
+        <item name="android:windowEnterTransition">@transition/fade</item>
+        <item name="android:windowExitTransition">@transition/fade</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="BaseText" parent="AppTheme">
+        <item name="android:textColor">@color/textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Title" parent="BaseText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="SubTitle" parent="BaseText">
+        <item name="android:textColor">@color/textColorSecondary</item>
+    </style>
+
+    <style name="CardTitle" parent="Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="CardDescription" parent="SubTitle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="SelectItemStyle" parent="AppTheme">
+        <item name="android:textAppearance">@style/BaseText</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="SelectItemTextStyle" parent="BaseText">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="ListStyle" parent="AppTheme">
+        <item name="android:background">@color/colorBackground</item>
+    </style>
+
+
+    <style name="Button" parent="Title">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">@drawable/button</item>
+        <item name="android:padding">@dimen/small_margin</item>
+        <item name="android:paddingStart">@dimen/big_margin</item>
+        <item name="android:paddingEnd">@dimen/big_margin</item>
+    </style>
+
+
+</resources>

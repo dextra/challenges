@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_comment_background"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/ic_comments"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_comments_up" />
+
+            <com.fastnews.mechanism.FontTextView
+                android:id="@+id/item_comment_author"
+                style="@style/Font12sp.GrayText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:gravity="left|center_vertical"
+                app:textFont="@string/font_roboto_bold"
+                tools:showIn="@layout/include_item_timeline_timeleft"
+                tools:text="r/food" />
+
+            <com.fastnews.mechanism.FontTextView
+                android:id="@+id/item_comment_timeleft"
+                style="@style/Font12sp.GrayText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:gravity="left|center_vertical"
+                app:textFont="@string/font_roboto_bold"
+                tools:text="- 9h" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_comment_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.fastnews.mechanism.FontTextView
+                android:id="@+id/item_comment_body"
+                style="@style/Font12sp.BlackText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:textFont="@string/font_roboto_regular"
+                tools:text="It's not very relevant.\n\nIt's not relevant.\n\nNougat is used by 0.3% of users. Marshmallow (which current MIUI is based off) is used by 24% of users. On top of that MIUI has features not included in either plain Marshmallow or Nougat (like one handed mode, read mode, torch, theming, etc.)" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <com.fastnews.mechanism.FontTextView
+                    android:id="@+id/item_comment_score_up"
+                    style="@style/Font12sp.BlueText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    app:textFont="@string/font_roboto_regular"
+                    tools:showIn="@layout/include_item_timeline_timeleft"
+                    tools:text="3514" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="4dp"
+                    android:src="@drawable/ic_score_up" />
+
+                <com.fastnews.mechanism.FontTextView
+                    android:id="@+id/item_comment_score_down"
+                    style="@style/Font12sp.RedText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="left|center"
+                    app:textFont="@string/font_roboto_regular"
+                    tools:showIn="@layout/include_item_timeline_timeleft"
+                    tools:text="3514" />
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="8dp"
+                    android:src="@drawable/ic_score_down" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

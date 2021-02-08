@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="detail_post_comments_header">comments</string>
+    <string name="error_detail_post_url">Poxa, infelizmente não consigo abrir a pagina.</string>
+
+</resources>

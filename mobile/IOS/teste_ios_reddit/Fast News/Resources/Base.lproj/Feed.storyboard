@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="h8p-Rh-EWw">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="8WF-T3-bjy">
+            <objects>
+                <navigationController id="h8p-Rh-EWw" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t1Z-Qm-v6K">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="h4z-HD-E9k"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r28-j1-H89" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-591" y="138"/>
+        </scene>
+        <!--Feed View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="FeedViewController" customModule="Fast_News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="FeedView" customModule="Fast_News" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="E8G-gA-YxK">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E8G-gA-YxK" secondAttribute="trailing" id="ThM-Zf-Cce"/>
+                            <constraint firstItem="E8G-gA-YxK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tbv-0F-p5m"/>
+                            <constraint firstItem="E8G-gA-YxK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uEs-tS-6wR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E8G-gA-YxK" secondAttribute="bottom" id="vmF-px-jgx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <connections>
+                            <outlet property="tableView" destination="E8G-gA-YxK" id="207-DY-WyE"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="Mhf-e2-ozA"/>
+                    <connections>
+                        <segue destination="RIE-QW-hj6" kind="show" identifier="toDetails" id="xfT-ec-kya"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="239" y="138"/>
+        </scene>
+        <!--Feed Details View Controller-->
+        <scene sceneID="QaO-Qv-FLC">
+            <objects>
+                <viewController id="RIE-QW-hj6" customClass="FeedDetailsViewController" customModule="Fast_News" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="b6Q-Fb-IUl" customClass="FeedDetailsView" customModule="Fast_News" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="7TS-7d-LMc">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bXx-Oc-SXh" firstAttribute="trailing" secondItem="7TS-7d-LMc" secondAttribute="trailing" id="4Ry-iW-jrE"/>
+                            <constraint firstItem="bXx-Oc-SXh" firstAttribute="bottom" secondItem="7TS-7d-LMc" secondAttribute="bottom" id="AfT-9L-s2I"/>
+                            <constraint firstItem="7TS-7d-LMc" firstAttribute="top" secondItem="bXx-Oc-SXh" secondAttribute="top" id="TcO-wB-2KY"/>
+                            <constraint firstItem="7TS-7d-LMc" firstAttribute="leading" secondItem="bXx-Oc-SXh" secondAttribute="leading" id="xKe-Fw-7nx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bXx-Oc-SXh"/>
+                        <connections>
+                            <outlet property="tableView" destination="7TS-7d-LMc" id="o45-7z-6DB"/>
+                        </connections>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X0T-Il-nJr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1006" y="138"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.dextra.newsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="dev.dextra.newsapp.NewsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_worldwide_news"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_worldwide_news"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="dev.dextra.newsapp.feature.sources.SourcesActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation|screenSize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="dev.dextra.newsapp.feature.news.NewsActivity"
+            android:label="@string/title_activity_news"
+            android:parentActivityName="dev.dextra.newsapp.feature.sources.SourcesActivity"
+            android:configChanges="orientation|screenSize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="dev.dextra.newsapp.feature.sources.SourcesActivity" />
+        </activity>
+    </application>
+
+</manifest>

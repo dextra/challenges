@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_comment_background">
+
+        <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+            <LinearLayout
+                    android:id="@+id/detail_post_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <include
+                        android:id="@+id/include_detail_post_header"
+                        layout="@layout/include_detail_post_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                <LinearLayout
+                        android:layout_marginTop="8dp"
+                        android:id="@+id/detail_post_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"/>
+
+                <ProgressBar
+                        android:layout_marginTop="16dp"
+                        android:id="@+id/state_progress_detail_post_comments"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"/>
+
+                <include
+                        android:id="@+id/state_without_conn_detail_post"
+                        layout="@layout/include_state_without_conn_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="36dp"
+                        android:visibility="gone"/>
+
+            </LinearLayout>
+        </ScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

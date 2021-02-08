@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Worldwide News</string>
+    <string name="title_activity_news">NewsActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_sources">News sources</string>
+    <string name="country">Country</string>
+    <string name="category">Category</string>
+
+    <string name="empty_state_title_source">No Sources found</string>
+    <string name="empty_state_subtitle_source">Couldn\'t find any News Source with the selected filters</string>
+
+    <string name="error_state_title_source">Error loading Sources</string>
+    <string name="error_state_subtitle_source">We had a problem loading the Sources list, please check your internet connection and click the button to retry</string>
+
+    <string name="empty_state_title_news">No News found</string>
+    <string name="empty_state_subtitle_news">Couldn\'t find any News for the selected source</string>
+
+    <string name="error_state_title_news">Error loading News</string>
+    <string name="error_state_subtitle_news">We had a problem loading the News list, please check your internet connection and click the button to retry</string>
+
+    <string name="error_state_retry">Retry</string>
+</resources>
