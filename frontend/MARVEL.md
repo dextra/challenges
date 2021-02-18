@@ -23,23 +23,23 @@ A **Marvel Comics** disponibiliza uma API onde estes dados podem ser encontrados
 
 * Botão ou mecanismo similar para abertura de uma nova página com detalhes do quadrinho.
 
-## Extras
+### Qualidade 
 
-* Boas práticas de codificação
-* Cobertura de testes
-* Aplicação responsiva
+* Criar testes para sua aplicação 
 
 
-O código deve estar em um repositório público.
+# Requisitos Opcionais 
+### Se quiser, escolha um ou mais itens para implementar:
 
-## Requisitos **Opcionais** - se quiser, escolha um ou mais, ou todos os itens abaixo para implementar:
-
-* Criar a aplicação responsiva para ser usada em devices mobile;
-* Criar um filtro por letra inicial do nome do personagem (como como um seletor de letra) que ao clicar, exiba todos os itens correspondentes;
-* Criar uma funcionalidade que permita que o usuário favorite os personagens (armazene os dados localmente no browser);
+* Criar a aplicação responsiva;
+* Criar um filtro por letra inicial do nome do personagem que ao clicar, exiba todos os itens correspondentes;
+* Criar uma funcionalidade que permita que o usuário favorite os personagens;
 * Armazenar a data em que o item foi favoritado;
 * Depois de favoritar, é preciso ter uma página para visualizar os itens favoritos, ordenados por nome ou por data em que foi favoritado (com a seguinte rota: /comics/favorites);
 * Opção de remover um personagem de favoritos;
 * Opção para limpar todos os itens favoritados;
-* Criar testes para sua aplicação
 * Hospedar sua aplicação em algum servidor cloud (se o fizer, envie o link da aplicação hospedada junto com o link do repositório);
+
+
+O código deve estar em um repositório público.
+
