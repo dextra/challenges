@@ -1,0 +1,6 @@
+5
+John Doe,Washington,Olympia,USA,33
+Rachel Doe,Washington,Olympia,USA,19
+Mark Schmidtt,Oregon,Portland,USA,25
+Kelly Barber,California,San Diego,USA,12
+Anna Dalcol,Paraná,Curitiba,BRA,28

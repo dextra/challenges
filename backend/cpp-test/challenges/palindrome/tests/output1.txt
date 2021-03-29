@@ -1,0 +1,3 @@
+roma is not palindrome
+alula is palindrome
+boob is palindrome

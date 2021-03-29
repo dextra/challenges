@@ -1,0 +1,8 @@
+slept is an anagram of spelt
+rice is not an anagram of nice
+trap is an anagram of part
+panel is an anagram of plane
+bird is not an anagram of dart
+stone is an anagram of notes
+arches is an anagram of search
+cup is not an anagram of cop
