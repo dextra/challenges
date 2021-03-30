@@ -1,10 +1,6 @@
 # C++ Test
 
-Welcome to the Dextra hiring test for C++ developers. Please fork this repository and make it private. Once you have finished this set of coding challenges, invite one or everyone (recommended) of these users to your repository:
-
-- [leozz37](https://github.com/leozz37)
-- [leokolln](https://github.com/leokolln)
-- [hhinke](https://github.com/hhinke)
+Welcome to the Dextra hiring test for C++ developers. Please fork this repository and submit a pull request once you have finished this set of coding challenges.
 
 This test will be about code clarity, problem solving and understanding of the C++ language. There are ten challenges that need to be solved, each one with its own constraints and test cases.
 
