@@ -1,0 +1,4 @@
+present is an anagram of serpent
+care is an anagram of race
+trees is an anagram of reset
+begin is an anagram of binge

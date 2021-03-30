@@ -1,0 +1,5 @@
+John Doe is 33 years old and lives in Olympia, Washington.
+Rachel Doe is 19 years old and lives in Olympia, Washington.
+Mark Schmidtt is 25 years old and lives in Portland, Oregon.
+Kelly Barber is 12 years old and lives in San Diego, California.
+Anna Dalcol is 28 years old and lives in Curitiba, Paraná.

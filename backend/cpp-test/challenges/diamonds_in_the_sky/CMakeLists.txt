@@ -1,0 +1,1 @@
+add_challenge(diamonds_in_the_sky)

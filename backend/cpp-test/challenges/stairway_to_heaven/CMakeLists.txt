@@ -1,0 +1,1 @@
+add_challenge(stairway_to_heaven)

@@ -1,0 +1,5 @@
+deified is palindrome
+tofu is not palindrome
+civic is palindrome
+noon is palindrome
+banana is not palindrome
