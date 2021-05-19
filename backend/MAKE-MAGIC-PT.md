@@ -106,7 +106,7 @@ NOTAS:
 
 ## Persistência
 
-Isso não é um requisito para completar o desafio, mas tenha em mente que queremos ver como você trabalhar, então, essa é uma ótima oportunidade de você nos mostrar suas habilidades, sinta-se à vontade to implementar uma persistência com banco de dados que você julgar necessáio.
+Isso não é um requisito para completar o desafio, mas tenha em mente que queremos ver como você trabalhar, então, essa é uma ótima oportunidade de você nos mostrar suas habilidades, sinta-se à vontade to implementar uma persistência com banco de dados que você julgar necessário.
 
 
 ## Filtros
