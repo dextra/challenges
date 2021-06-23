@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
 
+using namespace std;
+
 class Animal
 {
 public:
@@ -19,18 +21,134 @@ public:
 };
 
 // Write your classes here
+class Dog : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "woof" << endl;
+	}
+};
+
+class Cat : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "meow" << endl;
+	}
+};
+
+class Bird : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "tweet" << endl;
+	}
+};
+
+class Mouse : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "squeek" << endl;
+	}
+};
+
+class Cow : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "moo" << endl;
+	}
+};
+
+class Frog : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "croak" << endl;
+	}
+};
+
+class Elephant : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "toot" << endl;
+	}
+};
+
+class Duck : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "quack" << endl;
+	}
+};
+
+class Fish : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "blub" << endl;
+	}
+};
+
+class Seal : public Animal
+{
+public:
+	void makeSound() const
+	{
+		cout << "ow ow ow" << endl;
+	}
+};
 
 // This is the function you need to change in order to instantiate the required
 // classes.
 Animal* Animal::create(const std::string& name)
 {
-	return 0;
+	if (name == "dog")
+		return new Dog();
+	if (name == "cat")
+		return new Cat();
+	if (name == "bird")
+		return new Bird();
+	if (name == "mouse")
+		return new Mouse();
+	if (name == "cow")
+		return new Cow();
+	if (name == "frog")
+		return new Frog();
+	if (name == "elephant")
+		return new Elephant();
+	if (name == "duck")
+		return new Duck();
+	if (name == "fish")
+		return new Fish();
+	if (name == "seal")
+		return new Seal();
+
+	return nullptr;
 }
 
 void makeSound(const std::string& name)
 {
 	// Create our instance
 	Animal* animal = Animal::create(name);
+
+	if (animal == nullptr)
+	{
+		cout << name << " is not an animal" << endl;
+		return;
+	}
 
 	animal->makeSound();
 
